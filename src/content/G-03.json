@@ -1,0 +1,50 @@
+{
+  "id": "G-03",
+  "series": "choose",
+  "title": "혼자 가도 괜찮을까? 솔캠 첫 캠핑장 고르기",
+  "subtitle": "혼자라서 더 챙겨 볼 조건 3가지",
+  "personas": ["E"],
+  "readTimeMin": 3,
+  "release": "wave2",
+  "hero": { "type": "image", "src": "/img/g03-hero.jpg", "alt": "1인 텐트 앞에서 불멍하는 솔로 캠퍼" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "솔캠이 처음일 때 드는 걱정 3가지",
+      "body": "1. 혼자 예약이 되긴 할까?\n2. 밤에 화장실 가기 무섭지 않을까?\n3. 주변이 너무 어둡지 않을까?\n\n세 가지 모두 캠핑장 고를 때 미리 확인할 수 있어요. 아래 조건을 체크하면 맞는 곳만 골라 드려요."
+    },
+    {
+      "type": "checklist",
+      "id": "solo-check",
+      "title": "솔캠 캠핑장 고르기 체크",
+      "saveable": false,
+      "groups": [
+        {
+          "title": "내가 원하는 조건",
+          "items": [
+            { "id": "solo", "label": "1인 예약 가능", "hint": "2인 기준 요금을 받는 곳도 있어요", "filter": { "tags": ["solo"] } },
+            { "id": "facility", "label": "관리동 가까운 사이트", "hint": "화장실·매점까지 걸어서 3분 안쪽", "filter": { "tags": ["nearFacility"] } },
+            { "id": "light", "label": "밤에도 밝은 야간 조명", "hint": "통로 조명이 켜져 있는지 봐요", "filter": { "tags": ["nightLight"] } }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warn",
+      "text": "최소 인원 요금이 있으면 혼자여도 2인 요금을 내요. 예약 전 확인해요."
+    },
+    {
+      "type": "campsiteList",
+      "title": "솔캠 추천 캠핑장",
+      "filter": { "tags": ["solo", "beginner"] },
+      "limit": 5,
+      "numbered": false,
+      "badge": "weekend",
+      "followOverride": true
+    }
+  ],
+  "curation": { "tags": ["solo", "beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "솔캠하기 좋은 캠핑장 보기", "target": "curation" },
+  "next": ["U-01", "U-02"]
+}

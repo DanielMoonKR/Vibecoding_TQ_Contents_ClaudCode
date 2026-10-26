@@ -1,0 +1,42 @@
+{
+  "id": "D-03",
+  "series": "return",
+  "title": "친구 넷이 첫캠핑, 비용 정산까지",
+  "subtitle": "1인 얼마 들었는지 계산기로 바로 나눠요",
+  "personas": ["D"],
+  "readTimeMin": 3,
+  "release": "wave2",
+  "hero": { "type": "image", "src": "/img/d03-hero.jpg", "alt": "캠핑 테이블에 둘러앉은 친구 네 명" },
+  "blocks": [
+    {
+      "type": "interview",
+      "profile": { "name": "박○○ 님 외 3명", "desc": "대학 동기 4명 · 첫 오토캠핑 · 경기 안성", "avatar": "/img/d03-profile.jpg" },
+      "campsiteId": "camp_1162",
+      "campsiteAfter": 0,
+      "qa": [
+        { "q": "넷이서 어떻게 첫캠핑을 가게 됐어요?", "a": "여행 대신 색다른 걸 해 보자고 했어요. 장비는 다 빌리기로 하고 바로 예약했어요." },
+        { "q": "장비는 어떻게 했어요?", "a": "캠핑장 대여 세트를 썼어요. 텐트·테이블·의자까지 와 있어서 편했어요." },
+        { "q": "비용은 어떻게 나눴어요?", "a": "한 명이 다 결제하고, 아래 계산기로 1인 금액을 나눠 보냈어요. 깔끔했어요." },
+        { "q": "다음에 또 간다면요?", "a": "장보기 금액이 제일 컸어요. 다음엔 메뉴를 미리 정해서 줄여 보려고요." }
+      ]
+    },
+    {
+      "type": "costCalculator",
+      "people": 4,
+      "items": [
+        { "name": "사이트", "price": 70000 },
+        { "name": "장비 대여", "price": 60000 },
+        { "name": "장보기", "price": 160000 },
+        { "name": "연료", "price": 50000 }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "text": "단체 사이트는 기준 인원을 넘으면 1인 추가요금이 붙어요. 예약 때 인원을 정확히 넣어요."
+    }
+  ],
+  "curation": { "tags": ["group", "beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "친구들과 갈 캠핑장 보기", "target": "curation" },
+  "next": ["D-04", "G-02"]
+}

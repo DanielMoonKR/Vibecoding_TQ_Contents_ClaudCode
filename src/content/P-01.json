@@ -1,0 +1,37 @@
+{
+  "id": "P-01",
+  "series": "prepare",
+  "title": "장비 없이 가는 첫캠핑 체크리스트",
+  "subtitle": "텐트 없어도 괜찮아요. 이것만 챙기면 돼요",
+  "personas": ["A", "G"],
+  "readTimeMin": 3,
+  "release": "wave1",
+  "hero": { "type": "image", "src": "/img/p01-hero.jpg", "alt": "가방 하나만 들고 글램핑에 도착한 커플" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "장비 없이 가는 3가지 방법",
+      "body": "1. **글램핑**: 침구·난방이 다 있어요. 몸만 가면 돼요.\n2. **카라반**: 화장실·주방까지 안에 있어요.\n3. **장비 대여**: 오토캠핑 사이트에 텐트를 빌려줘요.\n\n어떤 방법이든 아래 체크리스트면 충분해요."
+    },
+    {
+      "type": "checklist",
+      "id": "no-gear",
+      "title": "장비 없이 가는 짐 챙기기",
+      "saveable": true,
+      "groups": [
+        { "title": "옷", "items": ["갈아입을 옷 1벌", "따뜻한 겉옷 (밤엔 추워요)", "편한 신발·슬리퍼", "잠옷"] },
+        { "title": "세면", "items": ["칫솔·치약", "수건", "샴푸·바디워시 소분", "물티슈"] },
+        { "title": "먹거리", "items": ["고기·채소 (바비큐용)", "아침 간편식", "생수·음료", "아이스박스 또는 보냉백"] },
+        { "title": "기타", "items": ["보조배터리", "모기 기피제", "개인 상비약", "쓰레기봉투"] }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "text": "대여 품목은 예약할 때 함께 신청해야 해요. 현장에선 품절일 수 있어요."
+    }
+  ],
+  "curation": { "anyOf": [{ "tags": ["rental"] }, { "stayTypes": ["glamping"] }], "tags": ["beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "장비 없이 갈 수 있는 곳 보기", "target": "curation" },
+  "next": ["D-04", "D-01"]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "P-02",
+  "series": "prepare",
+  "title": "첫 텐트 피칭 5분 영상",
+  "subtitle": "자리 고르기부터 스트링 조이기까지 6단계",
+  "personas": ["B", "C"],
+  "readTimeMin": 5,
+  "release": "wave2",
+  "hero": { "type": "video", "src": "/video/p02-pitching.mp4", "alt": "텐트를 치는 과정 영상 썸네일" },
+  "blocks": [
+    {
+      "type": "shortVideo",
+      "id": "p02-pitching",
+      "src": "/video/p02-pitching.mp4",
+      "poster": "/img/p02-poster.jpg",
+      "durationSec": 300,
+      "captions": [
+        { "start": 0, "end": 10, "text": "처음 텐트 치기, 5분이면 따라 할 수 있어요" },
+        { "start": 10, "end": 50, "text": "평평하고 돌이 적은 곳을 먼저 골라요" },
+        { "start": 50, "end": 90, "text": "그라운드시트는 텐트보다 조금 작게 깔아요" },
+        { "start": 90, "end": 140, "text": "입구 방향을 맞춰 텐트를 펼쳐요" },
+        { "start": 140, "end": 200, "text": "같은 색 폴대와 슬리브를 맞춰 끼워요" },
+        { "start": 200, "end": 250, "text": "팩은 45도 각도로 바깥을 향해 박아요" },
+        { "start": 250, "end": 300, "text": "스트링을 대각선 순서로 당기면 완성이에요" }
+      ],
+      "chapters": [
+        { "at": 10, "label": "자리 고르기" },
+        { "at": 50, "label": "시트 깔기" },
+        { "at": 90, "label": "텐트 펼치기" },
+        { "at": 140, "label": "폴대 끼우기" },
+        { "at": 200, "label": "팩 박기" },
+        { "at": 250, "label": "스트링 조이기" }
+      ]
+    },
+    {
+      "type": "stepCards",
+      "title": "단계별로 다시 보기",
+      "steps": [
+        { "title": "자리 고르기", "desc": "평평하고 돌이 적은 곳을 골라요. 입구는 바람 반대쪽으로 둬요.", "image": "/img/p02-step1.jpg" },
+        { "title": "그라운드시트 깔기", "desc": "텐트보다 조금 작게 깔아야 빗물이 고이지 않아요.", "image": "/img/p02-step2.jpg" },
+        { "title": "텐트 펼치기", "desc": "입구 방향을 맞춰 바닥에 펼쳐요.", "image": "/img/p02-step3.jpg" },
+        { "title": "폴대 끼우기", "desc": "색깔이 같은 폴대와 슬리브를 맞춰 끼워요.", "image": "/img/p02-step4.jpg" },
+        { "title": "팩 박기", "desc": "45도 각도로 바깥쪽을 향하게 박아요.", "image": "/img/p02-step5.jpg" },
+        { "title": "스트링 조이기", "desc": "대각선 순서로 당겨야 텐트가 반듯해져요.", "image": "/img/p02-step6.jpg" }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "text": "자신 없다면 관리인이 피칭을 도와주는 캠핑장을 골라요."
+    }
+  ],
+  "curation": { "tags": ["beginner", "pitchingHelp"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "피칭 도와주는 캠핑장 보기", "target": "curation" },
+  "next": ["D-01", "D-04"]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "U-04",
+  "series": "understand",
+  "title": "카라반 안은 어떻게 생겼을까? 내부 미리보기",
+  "subtitle": "외관부터 화장실·전기까지 한 바퀴 둘러봐요",
+  "personas": ["H"],
+  "readTimeMin": 2,
+  "release": "wave2",
+  "hero": { "type": "image", "src": "/img/u04-hero.jpg", "alt": "숲속에 세워진 카라반 외관" },
+  "blocks": [
+    {
+      "type": "photoTour",
+      "title": "카라반 한 바퀴",
+      "spots": [
+        { "image": "/img/u04-outside.jpg", "label": "외관", "desc": "차 한 대 크기예요. 앞에 어닝과 테이블이 있어 밖에서 식사해요.", "filter": { "stayTypes": ["caravan"] } },
+        { "image": "/img/u04-bed.jpg", "label": "침실", "desc": "더블 침대 1개가 기본이에요. 2층 침대가 있으면 4명까지 자요.", "filter": { "stayTypes": ["caravan"], "tags": ["kids"] } },
+        { "image": "/img/u04-kitchen.jpg", "label": "주방", "desc": "싱크대·인덕션·전자레인지가 있어요. 조리도구도 대부분 갖춰져 있어요.", "filter": { "stayTypes": ["caravan"], "tags": ["rental"] } },
+        { "image": "/img/u04-toilet.jpg", "label": "화장실", "desc": "샤워 부스가 딸린 내부 화장실이에요. 밤에 밖에 안 나가도 돼요.", "filter": { "stayTypes": ["caravan"], "tags": ["beginner"] } },
+        { "image": "/img/u04-power.jpg", "label": "전기·난방", "desc": "220V 콘센트와 냉난방기가 있어요. 겨울에도 따뜻해요.", "filter": { "stayTypes": ["caravan"], "tags": ["heating"] } }
+      ]
+    },
+    {
+      "type": "checklist",
+      "id": "caravan-check",
+      "title": "예약 전 확인할 것",
+      "groups": [
+        {
+          "title": "시설",
+          "items": [
+            { "id": "toilet", "label": "내부 화장실이 있는지", "hint": "없는 곳은 공용 화장실을 써요" },
+            { "id": "heating", "label": "난방 방식", "hint": "냉난방기인지 전기장판인지 봐요" },
+            { "id": "people", "label": "최대 인원", "hint": "기준 인원 초과 시 추가요금이 있어요" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "카라반 vs 글램핑, 뭐가 달라요?",
+      "body": "둘 다 장비 없이 갈 수 있어요. 차이는 '집처럼 편한가'예요. 카라반은 화장실·주방이 안에 있어 아이나 부모님과 가기 좋아요. 글램핑은 텐트 감성이 더 있고 가격이 조금 낮아요."
+    }
+  ],
+  "curation": { "stayTypes": ["caravan"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "카라반 캠핑장 보기", "target": "curation" },
+  "next": ["P-01", "P-03"]
+}

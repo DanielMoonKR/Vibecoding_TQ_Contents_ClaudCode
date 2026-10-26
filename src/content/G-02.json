@@ -1,0 +1,33 @@
+{
+  "id": "G-02",
+  "series": "choose",
+  "title": "서울에서 1시간, 초보가 실패 없는 캠핑장 10",
+  "subtitle": "가깝고, 편하고, 초보 환영인 곳만 골랐어요",
+  "personas": [],
+  "readTimeMin": 4,
+  "release": "wave1",
+  "hero": { "type": "image", "src": "/img/g02-hero.jpg", "alt": "도심 근교 숲속 캠핑장 전경" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "이렇게 골랐어요",
+      "body": "1. 서울에서 차로 90분 안쪽이에요.\n2. '초보 환영' 배지가 있는 곳이에요.\n3. 관리동과 화장실이 가까워요.\n\n첫캠핑은 가까운 곳이 좋아요. 뭔가 빠뜨려도 금방 다녀올 수 있거든요."
+    },
+    {
+      "type": "campsiteList",
+      "title": "초보 추천 캠핑장 10",
+      "filter": { "tags": ["beginner"], "maxDriveMin": 90 },
+      "limit": 10,
+      "numbered": true,
+      "badge": "weekend"
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "text": "금요일 오후 2시 전에 출발하면 퇴근길 정체를 피할 수 있어요."
+    }
+  ],
+  "curation": { "tags": ["beginner"], "maxDriveMin": 90, "availableThisWeekend": true, "sort": "drive", "limit": 6 },
+  "cta": { "label": "이번 주말 자리 있는 곳 보기", "target": "curation" },
+  "next": ["U-01", "U-02"]
+}

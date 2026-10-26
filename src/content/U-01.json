@@ -1,0 +1,58 @@
+{
+  "id": "U-01",
+  "series": "understand",
+  "title": "파쇄석·데크·잔디, 사이트 바닥 1분 정리",
+  "subtitle": "바닥만 알아도 챙길 장비가 달라져요",
+  "personas": ["C"],
+  "readTimeMin": 2,
+  "release": "wave1",
+  "hero": { "type": "video", "src": "/video/u01-floor.mp4", "alt": "사이트 바닥별 실제 모습 영상 썸네일" },
+  "blocks": [
+    {
+      "type": "shortVideo",
+      "id": "u01-floor",
+      "src": "/video/u01-floor.mp4",
+      "poster": "/img/u01-poster.jpg",
+      "durationSec": 60,
+      "captions": [
+        { "start": 0, "end": 6, "text": "캠핑장 바닥, 크게 네 가지예요" },
+        { "start": 6, "end": 18, "text": "파쇄석은 물이 잘 빠지고 팩이 잘 박혀요" },
+        { "start": 18, "end": 30, "text": "데크는 평평해서 초보가 텐트 치기 쉬워요" },
+        { "start": 30, "end": 42, "text": "잔디는 푹신하지만 비 온 뒤엔 젖어 있어요" },
+        { "start": 42, "end": 52, "text": "마사토는 배수가 좋고 평평해요" },
+        { "start": 52, "end": 60, "text": "바닥에 맞는 팩만 챙기면 끝이에요" }
+      ],
+      "chapters": [
+        { "at": 6, "label": "파쇄석" },
+        { "at": 18, "label": "데크" },
+        { "at": 30, "label": "잔디" },
+        { "at": 42, "label": "마사토" }
+      ]
+    },
+    {
+      "type": "glossary",
+      "title": "바닥 용어 사전",
+      "terms": ["파쇄석", "데크", "잔디", "마사토", "단조팩", "데크팩"]
+    },
+    {
+      "type": "compareTable",
+      "title": "바닥별 장단점과 필요 장비",
+      "columns": [
+        { "key": "gravel", "label": "파쇄석" },
+        { "key": "deck", "label": "데크" },
+        { "key": "grass", "label": "잔디" },
+        { "key": "masato", "label": "마사토" }
+      ],
+      "rows": [
+        { "label": "장점", "values": ["배수 좋음", "평평·깨끗", "푹신·감성", "배수·평평"] },
+        { "label": "단점", "values": ["바닥 배김", "팩 고정 어려움", "비 오면 젖음", "바람에 먼지"] },
+        { "label": "필요 장비", "values": ["단조팩, 두꺼운 매트", "데크팩", "방수포", "단조팩"] },
+        { "label": "초보 추천", "values": ["보통", "추천", "보통", "추천"] }
+      ],
+      "highlight": "deck"
+    }
+  ],
+  "curation": { "siteFloor": ["deck"], "tags": ["beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "데크 사이트 캠핑장 보기", "target": "curation" },
+  "next": ["P-01", "P-04"]
+}

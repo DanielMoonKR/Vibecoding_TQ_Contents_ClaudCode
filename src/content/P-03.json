@@ -1,0 +1,79 @@
+{
+  "id": "P-03",
+  "series": "prepare",
+  "title": "아이와 첫캠핑, 준비물과 안전 수칙",
+  "subtitle": "아이 나이에 맞춰 체크리스트가 바뀌어요",
+  "personas": ["B"],
+  "readTimeMin": 4,
+  "release": "wave2",
+  "hero": { "type": "image", "src": "/img/p03-hero.jpg", "alt": "캠핑장 잔디밭에서 노는 아이" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "아이와 첫캠핑, 핵심 3가지",
+      "body": "1. **가까운 곳**: 차로 1시간 안쪽이면 아이도 지치지 않아요.\n2. **편한 잠자리**: 글램핑이나 카라반으로 시작하면 수월해요.\n3. **안전 먼저**: 불과 뜨거운 장비 근처엔 아이가 못 가게 해요.\n\n아래에서 아이 나이를 고르면 필요한 것만 보여 드려요."
+    },
+    {
+      "type": "checklist",
+      "id": "kids",
+      "title": "아이 준비물",
+      "segments": {
+        "label": "아이 나이",
+        "options": [
+          { "key": "baby", "label": "0~3세" },
+          { "key": "kid", "label": "4~7세" },
+          { "key": "school", "label": "8세 이상" }
+        ]
+      },
+      "groups": [
+        {
+          "title": "아이 준비물",
+          "items": [
+            { "id": "diaper", "label": "기저귀·물티슈 넉넉히", "only": ["baby"] },
+            { "id": "formula", "label": "분유·젖병·보온병", "only": ["baby"] },
+            { "id": "stroller", "label": "휴대용 유모차", "only": ["baby"] },
+            { "id": "snack", "label": "좋아하는 간식", "only": ["kid", "school"] },
+            { "id": "toy", "label": "비눗방울·공 같은 바깥 놀이 장난감", "only": ["kid", "school"] },
+            { "id": "flash", "label": "아이용 헤드랜턴", "only": ["school"] },
+            { "id": "clothes", "label": "여벌 옷 2벌 이상" },
+            { "id": "warm", "label": "밤에 입을 두꺼운 겉옷" }
+          ]
+        },
+        {
+          "title": "상비약",
+          "items": [
+            { "id": "fever", "label": "해열제 (나이에 맞는 용량)" },
+            { "id": "bandage", "label": "밴드·소독약" },
+            { "id": "bug", "label": "아이용 모기 기피제", "hint": "나이별 사용 가능 성분을 확인해요" },
+            { "id": "burn", "label": "화상 연고" }
+          ]
+        },
+        {
+          "title": "안전",
+          "items": [
+            { "id": "rule", "label": "화로대 근처 금지 약속하기", "only": ["kid", "school"] },
+            { "id": "watch", "label": "어른 한 명은 항상 아이 곁에", "only": ["baby", "kid"] },
+            { "id": "whistle", "label": "길 잃으면 쓸 호루라기", "only": ["kid", "school"] },
+            { "id": "contact", "label": "보호자 연락처 적은 이름표" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warn",
+      "text": "화로대와 랜턴은 끈 뒤에도 한참 뜨거워요. 아이 손이 닿지 않게 둬요."
+    },
+    {
+      "type": "campsiteList",
+      "title": "키즈 시설 있는 캠핑장 5",
+      "filter": { "tags": ["kids", "beginner"] },
+      "limit": 5,
+      "numbered": false,
+      "badge": "weekend"
+    }
+  ],
+  "curation": { "tags": ["kids", "beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "아이랑 가기 좋은 캠핑장 보기", "target": "curation" },
+  "next": ["D-01", "D-04"]
+}

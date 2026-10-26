@@ -1,0 +1,94 @@
+{
+  "id": "G-01",
+  "series": "choose",
+  "title": "오토캠핑 vs 글램핑 vs 카라반, 나한테 맞는 건?",
+  "subtitle": "4문항이면 내 캠핑 유형이 나와요",
+  "personas": [],
+  "readTimeMin": 3,
+  "release": "wave1",
+  "hero": { "type": "image", "src": "/img/g01-hero.jpg", "alt": "텐트와 글램핑, 카라반이 함께 있는 캠핑장" },
+  "blocks": [
+    {
+      "type": "quiz",
+      "title": "나한테 맞는 캠핑은?",
+      "questions": [
+        {
+          "id": "gear",
+          "text": "캠핑 장비, 얼마나 있어요?",
+          "options": [
+            { "label": "하나도 없어요", "scores": { "glamping": 2, "caravan": 1 } },
+            { "label": "의자·테이블 정도 있어요", "scores": { "glamping": 1, "auto": 1 } },
+            { "label": "텐트까지 다 있어요", "scores": { "auto": 3 } }
+          ]
+        },
+        {
+          "id": "companion",
+          "text": "누구랑 가요?",
+          "options": [
+            { "label": "혼자 가요", "scores": { "auto": 1 }, "persona": "E" },
+            { "label": "연인이랑 가요", "scores": { "glamping": 1 }, "persona": "G" },
+            { "label": "친구들이랑 가요", "scores": { "auto": 1 }, "persona": "D" },
+            { "label": "아이랑 가요", "scores": { "caravan": 1, "glamping": 1 }, "persona": "B" },
+            { "label": "반려견이랑 가요", "scores": { "auto": 1 }, "persona": "F" }
+          ]
+        },
+        {
+          "id": "stay",
+          "text": "잠자리는 어떤 게 좋아요?",
+          "options": [
+            { "label": "텐트에서 자는 게 캠핑이죠", "scores": { "auto": 2 } },
+            { "label": "침대에서 편하게 자고 싶어요", "scores": { "glamping": 2 } },
+            { "label": "화장실까지 안에 있으면 좋겠어요", "scores": { "caravan": 2 } }
+          ]
+        },
+        {
+          "id": "budget",
+          "text": "1박 예산은 어느 정도예요?",
+          "options": [
+            { "label": "5만 원 안쪽", "scores": { "auto": 2 } },
+            { "label": "10만 원 안팎", "scores": { "glamping": 1, "auto": 1 } },
+            { "label": "15만 원 이상도 괜찮아요", "scores": { "caravan": 2, "glamping": 1 } }
+          ]
+        }
+      ],
+      "results": {
+        "auto": {
+          "title": "내 텐트로 즐기는 진짜 캠핑",
+          "desc": "가격이 가장 착하고 자유로워요. 처음이라면 데크 사이트에 장비 대여를 더하면 쉬워요."
+        },
+        "glamping": {
+          "title": "몸만 가도 되는 편한 캠핑",
+          "desc": "침구·난방이 다 있어요. 장비 걱정 없이 캠핑 분위기만 즐기기 좋아요."
+        },
+        "caravan": {
+          "title": "집처럼 편한 바퀴 달린 숙소",
+          "desc": "화장실·주방이 안에 있어요. 아이나 부모님과 함께라면 가장 편해요."
+        }
+      }
+    },
+    {
+      "type": "compareTable",
+      "title": "한눈에 비교해요",
+      "highlightFrom": "quiz",
+      "columns": [
+        { "key": "auto", "label": "오토캠핑" },
+        { "key": "glamping", "label": "글램핑" },
+        { "key": "caravan", "label": "카라반" }
+      ],
+      "rows": [
+        { "label": "1박 가격대", "values": ["3~7만 원", "10~20만 원", "13~25만 원"] },
+        { "label": "준비물", "values": ["텐트·침구 등 전부", "먹거리·세면도구", "먹거리·세면도구"] },
+        { "label": "화장실", "values": ["공용", "공용 또는 개별", "내부에 있음"] },
+        { "label": "추천 대상", "values": ["장비가 있거나 빌릴 분", "장비 없는 첫캠퍼", "아이·부모님 동반"] }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "유형별로 한 줄 정리",
+      "body": "- **오토캠핑**: 차를 사이트 옆에 대고 내 텐트를 쳐요. 장비는 대여로 시작해도 돼요.\n- **글램핑**: 텐트가 이미 쳐져 있어요. 짐은 먹거리면 충분해요.\n- **카라반**: 바퀴 달린 작은 집이에요. 화장실이 안에 있어 밤에도 편해요."
+    }
+  ],
+  "curation": { "fromQuiz": true, "tags": ["beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "내 유형 캠핑장 보기", "target": "curation", "variants": { "B": "나한테 맞는 캠핑장 보기" } },
+  "next": ["U-01", "U-02"]
+}

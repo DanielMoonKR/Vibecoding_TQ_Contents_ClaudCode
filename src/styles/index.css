@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * 땡큐캠핑 디자인 시스템 v2 시맨틱 컬러 토큰
+ * 라이트 값: storybook.thankqcamping.com > Design Tokens > Colors
+ * 다크 값: 스토리북에 미정의 → inverse 토큰 기반 임시값. 디자인팀 확정 필요
+ */
+:root {
+  --semantic-primary-normal: #ff4802;
+  --semantic-primary-strong: #e54100;
+  --semantic-primary-heavy: #cc3a00;
+
+  --semantic-label-normal: #171719;
+  --semantic-label-strong: #000000;
+  --semantic-label-neutral: #2e2f33e0;
+  --semantic-label-alternative: #37383c9c;
+  --semantic-label-assistive: #37383c47;
+  --semantic-label-disable: #37383c29;
+
+  --semantic-background-normal-normal: #ffffff;
+  --semantic-background-normal-alternative: #f7f7f8;
+  --semantic-background-elevated-normal: #ffffff;
+  --semantic-background-elevated-alternative: #f7f7f8;
+
+  --semantic-interaction-inactive: #989ba2;
+  --semantic-interaction-disable: #f4f4f5;
+
+  --semantic-line-normal-normal: #70737c38;
+  --semantic-line-normal-gray: #70737c29;
+  --semantic-line-normal-alternative: #70737c14;
+  --semantic-line-normal-strong: #70737c85;
+  --semantic-line-solid-normal: #e1e2e4;
+  --semantic-line-solid-neutral: #eaebec;
+  --semantic-line-solid-alternative: #f4f4f5;
+  --semantic-line-solid-strong: #aeb0b6;
+
+  --semantic-fill-normal: #70737c14;
+  --semantic-fill-strong: #70737c29;
+  --semantic-fill-alternative: #70737c0d;
+
+  --semantic-status-positive: #1a8038;
+  --semantic-status-cautionary: #eab305;
+  --semantic-status-negative: #da1e28;
+  --semantic-status-informative: #0f61fe;
+  --semantic-static-white: #ffffff;
+  --semantic-static-black: #000000;
+
+  --semantic-accent-background-red-orange: #ff4802;
+  --semantic-accent-background-lime: #58cf04;
+  --semantic-accent-background-cyan: #00bdde;
+  --semantic-accent-background-light-blue: #00aeff;
+  --semantic-accent-background-violet: #6366f1;
+  --semantic-accent-background-purple: #8a3ffc;
+  --semantic-accent-background-pink: #cf2670;
+  --semantic-accent-foreground-red: #c61b24;
+  --semantic-accent-foreground-red-orange: #f24605;
+  --semantic-accent-foreground-orange: #df6814;
+  --semantic-accent-foreground-lime: #429e00;
+  --semantic-accent-foreground-green: #187433;
+  --semantic-accent-foreground-cyan: #0098b2;
+  --semantic-accent-foreground-light-blue: #008dcf;
+  --semantic-accent-foreground-blue: #005eeb;
+  --semantic-accent-foreground-violet: #585bf2;
+  --semantic-accent-foreground-purple: #7e39e5;
+  --semantic-accent-foreground-pink: #c7216a;
+
+  --semantic-material-dimmer: #17171985;
+
+  --semantic-inverse-primary: #ff6c30;
+  --semantic-inverse-background: #1b1c1e;
+  --semantic-inverse-label: #f7f7f8;
+
+  /* 첫캠핑 가이드 시리즈 배지 4종 (기획안 10장: 추가 허용 범위) */
+  --series-choose: var(--semantic-accent-foreground-blue);
+  --series-choose-bg: #005eeb14;
+  --series-understand: var(--semantic-accent-foreground-violet);
+  --series-understand-bg: #585bf214;
+  --series-prepare: var(--semantic-accent-foreground-green);
+  --series-prepare-bg: #18743314;
+  --series-return: var(--semantic-accent-foreground-red-orange);
+  --series-return-bg: #f2460514;
+
+  color-scheme: light;
+}
+
+/* 다크모드: 앱이 html[data-theme] 로 내려주면 그것을 따르고, 없으면 OS 설정을 따른다 */
+:root[data-theme='dark'] {
+  --semantic-primary-normal: #ff6c30;
+  --semantic-primary-strong: #ff5a17;
+  --semantic-primary-heavy: #ff4802;
+  --semantic-label-normal: #f7f7f8;
+  --semantic-label-strong: #ffffff;
+  --semantic-label-neutral: #f7f7f8e0;
+  --semantic-label-alternative: #c2c4c8a8;
+  --semantic-label-assistive: #c2c4c85c;
+  --semantic-label-disable: #c2c4c838;
+  --semantic-background-normal-normal: #1b1c1e;
+  --semantic-background-normal-alternative: #0f0f10;
+  --semantic-background-elevated-normal: #212225;
+  --semantic-background-elevated-alternative: #292a2d;
+  --semantic-interaction-inactive: #70737c;
+  --semantic-interaction-disable: #2e2f33;
+  --semantic-line-normal-normal: #70737c52;
+  --semantic-line-normal-gray: #70737c47;
+  --semantic-line-normal-alternative: #70737c29;
+  --semantic-line-normal-strong: #70737ca3;
+  --semantic-line-solid-normal: #37383c;
+  --semantic-line-solid-neutral: #2e2f33;
+  --semantic-line-solid-alternative: #292a2d;
+  --semantic-line-solid-strong: #5a5c63;
+  --semantic-fill-normal: #70737c38;
+  --semantic-fill-strong: #70737c52;
+  --semantic-fill-alternative: #70737c1f;
+  --semantic-status-positive: #3fbf63;
+  --semantic-status-negative: #ff5c63;
+  --semantic-status-informative: #5c94ff;
+  --semantic-accent-foreground-blue: #5c94ff;
+  --semantic-accent-foreground-violet: #9a9cf8;
+  --semantic-accent-foreground-green: #3fbf63;
+  --semantic-accent-foreground-red-orange: #ff7a45;
+  --semantic-accent-foreground-orange: #f28b45;
+  --semantic-material-dimmer: #000000b3;
+  --series-choose-bg: #5c94ff26;
+  --series-understand-bg: #9a9cf826;
+  --series-prepare-bg: #3fbf6326;
+  --series-return-bg: #ff7a4526;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --semantic-primary-normal: #ff6c30;
+    --semantic-primary-strong: #ff5a17;
+    --semantic-primary-heavy: #ff4802;
+    --semantic-label-normal: #f7f7f8;
+    --semantic-label-strong: #ffffff;
+    --semantic-label-neutral: #f7f7f8e0;
+    --semantic-label-alternative: #c2c4c8a8;
+    --semantic-label-assistive: #c2c4c85c;
+    --semantic-label-disable: #c2c4c838;
+    --semantic-background-normal-normal: #1b1c1e;
+    --semantic-background-normal-alternative: #0f0f10;
+    --semantic-background-elevated-normal: #212225;
+    --semantic-background-elevated-alternative: #292a2d;
+    --semantic-interaction-inactive: #70737c;
+    --semantic-interaction-disable: #2e2f33;
+    --semantic-line-normal-normal: #70737c52;
+    --semantic-line-normal-gray: #70737c47;
+    --semantic-line-normal-alternative: #70737c29;
+    --semantic-line-normal-strong: #70737ca3;
+    --semantic-line-solid-normal: #37383c;
+    --semantic-line-solid-neutral: #2e2f33;
+    --semantic-line-solid-alternative: #292a2d;
+    --semantic-line-solid-strong: #5a5c63;
+    --semantic-fill-normal: #70737c38;
+    --semantic-fill-strong: #70737c52;
+    --semantic-fill-alternative: #70737c1f;
+    --semantic-status-positive: #3fbf63;
+    --semantic-status-negative: #ff5c63;
+    --semantic-status-informative: #5c94ff;
+    --semantic-accent-foreground-blue: #5c94ff;
+    --semantic-accent-foreground-violet: #9a9cf8;
+    --semantic-accent-foreground-green: #3fbf63;
+    --semantic-accent-foreground-red-orange: #ff7a45;
+    --semantic-accent-foreground-orange: #f28b45;
+    --semantic-material-dimmer: #000000b3;
+    --series-choose-bg: #5c94ff26;
+    --series-understand-bg: #9a9cf826;
+    --series-prepare-bg: #3fbf6326;
+    --series-return-bg: #ff7a4526;
+    color-scheme: dark;
+  }
+}
+
+html,
+body {
+  background: var(--semantic-background-normal-alternative);
+  color: var(--semantic-label-normal);
+  font-family: 'Pretendard Variable', Pretendard, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  /* 강조 영역 배경: primary 10% (토큰이 hex라 Tailwind 투명도 수식어 대신 color-mix 사용) */
+  .bg-primary-tint {
+    background-color: color-mix(in srgb, var(--semantic-primary-normal) 10%, transparent);
+  }
+}

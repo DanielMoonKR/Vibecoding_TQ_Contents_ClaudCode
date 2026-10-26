@@ -1,0 +1,60 @@
+{
+  "id": "P-04",
+  "series": "prepare",
+  "title": "겨울 첫캠핑, 난방 걱정 없는 캠핑장과 준비물",
+  "subtitle": "따뜻하게 자는 법부터 꼭 챙길 안전 장비까지",
+  "personas": [],
+  "readTimeMin": 4,
+  "release": "wave1",
+  "hero": { "type": "image", "src": "/img/p04-hero.jpg", "alt": "눈 덮인 캠핑장의 따뜻한 조명 텐트" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "겨울 캠핑 첫날, 이것만 조심해요",
+      "body": "겨울 밤은 생각보다 훨씬 추워요. 영하로 내려가는 날이 많아요.\n\n- 전기 사용 가능한 사이트인지 먼저 봐요.\n- **전기장판**은 기본, 바닥 냉기를 막는 매트도 챙겨요.\n- 난로를 쓴다면 **일산화탄소 경보기**가 꼭 필요해요.\n\n처음이라면 난방이 갖춰진 글램핑이 가장 편해요."
+    },
+    {
+      "type": "compareTable",
+      "title": "난방 방식 비교",
+      "highlight": "glamping",
+      "columns": [
+        { "key": "pad", "label": "전기장판" },
+        { "key": "heater", "label": "온풍기" },
+        { "key": "glamping", "label": "난방 글램핑" }
+      ],
+      "rows": [
+        { "label": "따뜻함", "values": ["바닥만 따뜻", "공기까지 따뜻", "실내처럼 따뜻"] },
+        { "label": "준비", "values": ["직접 챙김", "직접 챙김·대여", "준비 필요 없음"] },
+        { "label": "안전", "values": ["저온 화상 주의", "환기 필요", "가장 안전"] },
+        { "label": "초보 추천", "values": ["보통", "보통", "추천"] }
+      ]
+    },
+    {
+      "type": "checklist",
+      "id": "winter",
+      "title": "겨울 준비물",
+      "groups": [
+        { "title": "보온", "items": ["두꺼운 패딩", "내복·수면양말", "핫팩 넉넉히", "털모자·장갑"] },
+        { "title": "잠자리", "items": ["전기장판", "동계 침낭", "바닥 매트", "멀티탭 (방수형)"] },
+        { "title": "안전", "items": ["일산화탄소 경보기", "소화기 위치 확인", "랜턴·여분 배터리"] }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warn",
+      "text": "텐트 안에서 난로를 쓸 땐 일산화탄소 경보기를 꼭 켜 두세요."
+    },
+    {
+      "type": "campsiteList",
+      "title": "난방 포함, 따뜻한 캠핑장 5",
+      "filter": { "tags": ["heating", "beginner"] },
+      "limit": 5,
+      "numbered": false,
+      "badge": "beginner",
+      "weekendPicker": true
+    }
+  ],
+  "curation": { "tags": ["heating", "beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "따뜻한 겨울 캠핑장 보기", "target": "curation" },
+  "next": ["D-04", "D-03"]
+}

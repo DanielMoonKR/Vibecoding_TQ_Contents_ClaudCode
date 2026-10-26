@@ -1,0 +1,50 @@
+{
+  "id": "U-03",
+  "series": "understand",
+  "title": "글램핑 가격, 왜 이렇게 차이 날까?",
+  "subtitle": "6만 원과 15만 원, 무엇이 다른지 비교해요",
+  "personas": ["A", "G"],
+  "readTimeMin": 3,
+  "release": "wave2",
+  "hero": { "type": "image", "src": "/img/u03-hero.jpg", "alt": "조명이 켜진 글램핑 텐트 내부" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "가격 차이를 만드는 4가지",
+      "body": "1. **침구**: 이불만 주는지, 호텔식 침구인지\n2. **난방**: 전기장판만 있는지, 온돌·에어컨까지 있는지\n3. **화장실**: 공용인지, 텐트 안에 있는지\n4. **바비큐**: 그릴·숯을 따로 사는지, 포함인지\n\n같은 '글램핑'이라도 이 네 가지가 가격을 정해요."
+    },
+    {
+      "type": "compareTable",
+      "title": "등급별 포함 내역",
+      "highlight": "mid",
+      "columns": [
+        { "key": "basic", "label": "기본형" },
+        { "key": "mid", "label": "중급" },
+        { "key": "premium", "label": "프리미엄" }
+      ],
+      "rows": [
+        { "label": "1박 가격대", "values": ["5~10만 원", "10~13만 원", "13만 원 이상"] },
+        { "label": "침구", "values": ["기본 이불", "침대·이불", "호텔식 침구"] },
+        { "label": "난방", "values": ["전기장판", "전기장판·온풍기", "온돌·냉난방기"] },
+        { "label": "화장실", "values": ["공용", "공용", "개별"] },
+        { "label": "바비큐", "values": ["별도 구매", "그릴 포함", "그릴·숯 포함"] }
+      ],
+      "selectable": {
+        "buttonLabel": "{label} 글램핑 보기",
+        "filters": {
+          "basic": { "stayTypes": ["glamping"], "maxPrice": 100000 },
+          "mid": { "stayTypes": ["glamping"], "minPrice": 100001, "maxPrice": 130000 },
+          "premium": { "stayTypes": ["glamping"], "minPrice": 130001 }
+        }
+      }
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "text": "같은 글램핑도 일~목요일엔 20~30% 저렴한 곳이 많아요."
+    }
+  ],
+  "curation": { "stayTypes": ["glamping"], "sort": "price", "limit": 6 },
+  "cta": { "label": "내 예산 글램핑 보기", "target": "curation" },
+  "next": ["P-01", "P-04"]
+}

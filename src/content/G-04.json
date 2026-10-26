@@ -1,0 +1,67 @@
+{
+  "id": "G-04",
+  "series": "choose",
+  "title": "우리 강아지와 첫캠핑, 애견 동반 캠핑장 고르는 법",
+  "subtitle": "마릿수·크기 제한부터 펜스 사이트까지",
+  "personas": ["F"],
+  "readTimeMin": 3,
+  "release": "wave1",
+  "hero": { "type": "image", "src": "/img/g04-hero.jpg", "alt": "잔디 사이트의 강아지" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "예약 전 꼭 확인할 4가지",
+      "body": "'애견 동반 가능'이라도 조건은 캠핑장마다 달라요.\n\n1. 몇 마리까지 갈 수 있는지\n2. 몸무게 제한이 있는지\n3. 안 되는 견종이 있는지\n4. 추가요금이 얼마인지\n\n이 네 가지만 보면 현장에서 당황할 일이 없어요."
+    },
+    {
+      "type": "checklist",
+      "id": "pet-before-booking",
+      "title": "예약 전 체크리스트",
+      "groups": [
+        {
+          "title": "예약 전",
+          "items": [
+            { "id": "count", "label": "동반 가능 마릿수", "hint": "보통 1~2마리까지예요" },
+            { "id": "weight", "label": "몸무게 제한", "hint": "10kg·15kg 기준이 많아요" },
+            { "id": "breed", "label": "견종 제한", "hint": "맹견 6종은 대부분 안 돼요" },
+            { "id": "fee", "label": "추가요금", "hint": "1박·1마리 기준인지 봐요" }
+          ]
+        },
+        {
+          "title": "챙길 것",
+          "items": ["목줄·리드줄", "배변봉투", "평소 먹던 사료", "켄넬 또는 방석"]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warn",
+      "text": "추가요금이 1박 기준인지, 1마리 기준인지 꼭 확인하세요."
+    },
+    {
+      "type": "compareTable",
+      "title": "일반 사이트 vs 펜스 사이트",
+      "highlight": "fence",
+      "columns": [
+        { "key": "normal", "label": "일반 사이트" },
+        { "key": "fence", "label": "펜스 사이트" }
+      ],
+      "rows": [
+        { "label": "목줄", "values": ["항상 착용", "펜스 안에선 자유"] },
+        { "label": "가격", "values": ["기본 요금", "1~2만 원 더"] },
+        { "label": "추천", "values": ["얌전한 소형견", "활발한 강아지"] }
+      ]
+    },
+    {
+      "type": "campsiteList",
+      "title": "우리 강아지가 갈 수 있는 곳",
+      "filter": { "tags": ["pet", "beginner"] },
+      "limit": 5,
+      "numbered": false,
+      "petWeightInput": true
+    }
+  ],
+  "curation": { "tags": ["pet", "beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "애견 동반 캠핑장 보기", "target": "curation" },
+  "next": ["U-02", "P-01"]
+}

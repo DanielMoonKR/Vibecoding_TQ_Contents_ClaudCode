@@ -1,0 +1,37 @@
+{
+  "id": "D-04",
+  "series": "return",
+  "title": "이번 주말 날씨 좋은 초보 캠핑장",
+  "subtitle": "비 소식 없고, 아직 자리 있는 곳만 골랐어요",
+  "personas": [],
+  "readTimeMin": 2,
+  "release": "wave1",
+  "updatedAt": "2026.10.22 (목)",
+  "hero": { "type": "image", "src": "/img/d04-hero.jpg", "alt": "맑은 하늘 아래 캠핑장 사이트" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "이번 주 이렇게 골랐어요",
+      "body": "매주 목요일, 주말 날씨와 남은 자리를 보고 골라요.\n\n1. 주말 강수 확률이 낮은 지역이에요.\n2. 이번 주말 예약 가능한 사이트가 남아 있어요.\n3. '초보 환영' 배지가 있는 곳이에요."
+    },
+    {
+      "type": "campsiteList",
+      "title": "이번 주말 추천 6",
+      "filter": {
+        "ids": ["camp_1203", "camp_1031", "camp_1130", "camp_1078", "camp_1024", "camp_1067"],
+        "availableThisWeekend": true
+      },
+      "limit": 6,
+      "numbered": true,
+      "badge": "weather"
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "text": "다음 주 추천은 목요일에 올라와요. 알림을 켜 두면 먼저 볼 수 있어요."
+    }
+  ],
+  "curation": { "availableThisWeekend": true, "tags": ["beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "이번 주말 예약하기", "target": "curation" },
+  "next": ["G-01", "G-02"]
+}

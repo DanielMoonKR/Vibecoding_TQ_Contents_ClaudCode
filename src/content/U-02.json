@@ -1,0 +1,52 @@
+{
+  "id": "U-02",
+  "series": "understand",
+  "title": "취소·환불 규정, 이것만 보면 된다",
+  "subtitle": "언제 취소하면 얼마 돌려받는지 바로 계산해요",
+  "personas": [],
+  "readTimeMin": 3,
+  "release": "wave1",
+  "hero": { "type": "image", "src": "/img/u02-hero.jpg", "alt": "달력과 캠핑 예약 확인 화면" },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "꼭 볼 3줄",
+      "body": "1. 환불률은 '이용일 며칠 전'에 취소했는지로 정해져요.\n2. 날짜 변경은 취소 후 재예약인 경우가 많아요.\n3. 우천 취소는 캠핑장마다 기준이 달라요.\n\n예약 전에 캠핑장 상세페이지의 환불 규정을 한 번만 확인해요."
+    },
+    {
+      "type": "refundTimeline",
+      "title": "언제 취소하면 얼마 돌려받을까?",
+      "defaultAmount": 100000,
+      "steps": [
+        { "daysBefore": 7, "rate": 100, "label": "이용 7일 전까지" },
+        { "daysBefore": 5, "rate": 70, "label": "이용 5~6일 전" },
+        { "daysBefore": 3, "rate": 50, "label": "이용 3~4일 전" },
+        { "daysBefore": 1, "rate": 20, "label": "이용 1~2일 전" },
+        { "daysBefore": 0, "rate": 0, "label": "이용 당일" }
+      ]
+    },
+    {
+      "type": "checklist",
+      "id": "refund-check",
+      "title": "예약 전 확인할 것",
+      "groups": [
+        {
+          "title": "환불 규정",
+          "items": [
+            { "id": "rain", "label": "우천·천재지변 때 환불 기준", "hint": "기상특보 발령 시 전액 환불인 곳이 많아요" },
+            { "id": "change", "label": "날짜 변경 가능 여부", "hint": "변경 수수료가 있는지 봐요" },
+            { "id": "days", "label": "환불 소요일", "hint": "카드 결제는 보통 3~7일 걸려요" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "text": "첫 예약은 비가 오면 날짜를 무료로 바꿀 수 있는 곳이 있어요. 상세페이지에서 확인해요."
+    }
+  ],
+  "curation": { "tags": ["freeCancel", "beginner"], "sort": "rating", "limit": 6 },
+  "cta": { "label": "무료 취소 가능한 캠핑장 보기", "target": "curation" },
+  "next": ["P-01", "P-04"]
+}
