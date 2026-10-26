@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Icon } from './Icon';
 
-// 이미지 + 로딩 실패 시 토큰 색 플레이스홀더. 목업 단계에서는 실제 사진이 없어 플레이스홀더가 보인다.
+// 이미지 + 토큰 색 플레이스홀더. 플레이스홀더를 먼저 깔고 사진은 로드가 끝난 뒤에만 덮어
+// 로딩 중·실패(목업 단계엔 실제 사진이 없음) 어느 경우에도 빈 칸이 보이지 않게 한다.
 const tints = [
   'bg-series-choose-bg text-series-choose',
   'bg-series-understand-bg text-series-understand',
@@ -27,27 +28,34 @@ export function Img({
   /** 플레이스홀더에 보일 짧은 라벨 (없으면 alt) */
   label?: string;
 }) {
-  const [failed, setFailed] = useState(!src);
+  const [state, setState] = useState<'loading' | 'loaded' | 'failed'>(src ? 'loading' : 'failed');
 
-  if (failed) {
-    return (
-      <div
-        role="img"
-        aria-label={alt}
-        className={`flex flex-col items-center justify-center gap-1 ${tints[hash(alt) % tints.length]} ${className}`}
-      >
-        <Icon name="tent" size={28} />
-        <span className="prose-caption-one-medium px-2 text-center opacity-80">{label ?? alt}</span>
-      </div>
-    );
-  }
   return (
-    <img
-      src={src}
-      alt={alt}
-      loading="lazy"
-      onError={() => setFailed(true)}
-      className={`object-cover ${className}`}
-    />
+    <div className={`relative overflow-hidden ${className}`}>
+      {state !== 'loaded' && (
+        <div
+          role="img"
+          aria-label={alt}
+          className={`absolute inset-0 flex flex-col items-center justify-center gap-1 ${tints[hash(alt) % tints.length]}`}
+        >
+          <Icon name="tent" size={28} />
+          {label !== '' && (
+            <span className="prose-caption-one-medium px-2 text-center opacity-80">{label ?? alt}</span>
+          )}
+        </div>
+      )}
+      {src && state !== 'failed' && (
+        <img
+          src={src}
+          alt={state === 'loaded' ? alt : ''}
+          loading="lazy"
+          onLoad={() => setState('loaded')}
+          onError={() => setState('failed')}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-200 ${
+            state === 'loaded' ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      )}
+    </div>
   );
 }
