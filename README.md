@@ -1,11 +1,11 @@
-# Vibecoding_TQ_Contents
+# Vibecoding_TQ_Contents_ClaudCode
 Guide for the first camper or Users
 
 ## 첫캠핑 가이드 컨텐츠 페이지
 
 공통 렌더러 1개 + 컨텐츠 JSON으로 만드는 `/guide/{contentId}` 페이지 (기획안: 첫캠핑 가이드 컨텐츠 페이지 상세 기획안).
 
-**프로토타입:** https://danielmoonkr.github.io/Vibecoding_TQ_Contents/ (모바일 화면 또는 브라우저 개발자도구의 모바일 뷰로 보세요)
+**프로토타입:** https://danielmoonkr.github.io/Vibecoding_TQ_Contents_ClaudCode/ (모바일 화면 또는 브라우저 개발자도구의 모바일 뷰로 보세요)
 
 ```bash
 npm install
