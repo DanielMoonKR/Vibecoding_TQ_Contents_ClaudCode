@@ -1,4 +1,7 @@
-# 첫캠핑 가이드 컨텐츠 페이지
+# Vibecoding_TQ_Contents
+Guide for the first camper or Users
+
+## 첫캠핑 가이드 컨텐츠 페이지
 
 공통 렌더러 1개 + 컨텐츠 JSON으로 만드는 `/guide/{contentId}` 페이지 (기획안: 첫캠핑 가이드 컨텐츠 페이지 상세 기획안).
 
